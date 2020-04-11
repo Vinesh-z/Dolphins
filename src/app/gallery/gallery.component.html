@@ -1,3 +1,29 @@
-<p>
-  gallery works!
-</p>
+<div>
+  <div class="design">
+    <img class="image-design" src="../../assets/design.png" alt="design">
+  </div>
+  <div class="gallery">
+    <img class="image-gallery" src="../../assets/gallery.jpg" alt="design">
+  </div>
+</div>
+<div>
+  <div class="tabs">
+    <button type="button" class="btn btn-danger gen-button" routerLink="">Home</button>
+    <button type="button" class="btn btn-success gen-button">Gallery</button>
+    <button type="button" class="btn btn-warning gen-button" routerLink="../enquiry">Enquiry</button>
+  </div>
+  <div class="tabs">
+    <button type="button" class="btn btn-danger gen-button" (click) = "selectList(sportsPhotos)">Sports Day</button>
+    <button type="button" class="btn btn-success gen-button" (click) = "selectList(independencePhotos)">Independence day</button>
+    <button type="button" class="btn btn-warning gen-button" (click) = "selectList(fancyPhotos)">Fancy dress</button>
+    <button type="button" class="btn btn-secondary gen-button" (click) = "selectList(classPhotos)">Class photos</button>
+    <button type="button" class="btn btn-primary gen-button" (click) = "selectList(otherPhotos)">Others</button>
+  </div>
+  <div class="photos">
+    <div class="row">
+      <div class="col" *ngFor="let pic of pics; let i = index">
+        <img (click)="imageClick(pic)" class="images" src={{pic}} alt="pic{{i}}">
+      </div>
+    </div>
+  </div>
+</div>

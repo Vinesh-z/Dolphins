@@ -64,6 +64,11 @@
                 <div>
                     <h5><img class="d-block cover-image announcement" src="../../assets/announcement.png">Announcement</h5>
                 </div>
+                <div class="announcements">
+                    <p *ngFor="let ann of announcements; let i = index">
+                        {{i+1}}. {{ann}}
+                    </p>
+                </div>
             </div>
         </div>
     </div>
