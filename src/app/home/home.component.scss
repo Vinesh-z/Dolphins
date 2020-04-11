@@ -1,0 +1,130 @@
+.tabs {
+    text-align: center;
+    width: 100%;
+}
+
+.gen-container {
+    overflow-x: hidden;
+}
+
+.gen-col {
+    position: relative;
+    display: inline-block;
+}
+
+.heading {
+    text-align: center;
+}
+
+.bar {
+    float: right;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    height: 14rem;
+    border-radius: 5px;
+    width: 0.5rem;
+}
+
+.gen-button {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    width: 5.5rem;
+    height: 2rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    line-height: 2px;
+    color: #fff;
+}
+
+h5 {
+    text-align: center;
+}
+
+.about {
+    z-index: 1;
+    margin-left: 6rem;
+    line-height: 2rem;
+}
+
+p {
+    font-size: small;
+    text-align: justify;
+}
+
+.vl {
+    border-left: 6px solid green;
+    height: 100px;
+}
+
+.why-pic {
+    float: left;
+    margin-left: 1.5rem;
+    position: absolute;
+    height: 1.3rem;
+}
+
+.rating-pic {
+    float: left;
+    position: absolute;
+    height: 0.8rem;
+    margin-top: 0.2rem;
+}
+
+.rating {
+    margin-left: 7rem;
+    float: right;
+    position: absolute;
+}
+
+.why {
+    margin-left: 7rem;
+    float: right;
+    position: absolute;
+}
+
+.why-us {
+    margin-top: 1rem;
+}
+
+.tree {
+    left: 0;
+    bottom: 0;
+    margin-top: -4.5rem;
+    height: 16rem;
+}
+
+.tree-pic {
+    position: absolute;
+}
+
+.announcement {
+    margin-left: 3rem;
+    position: absolute;
+    height: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .gen-button {
+        margin: 0.5rem;
+    }
+    .gen-col {
+        margin-top: 1rem;
+        display: grid;
+    }
+    .rating-pic {
+        float: left;
+        position: absolute;
+        height: 0.7rem;
+        margin-top: 0.5rem;
+    }
+    .rating {
+        margin-left: 5rem;
+    }
+    .bar {
+        height: 0;
+    }
+}
