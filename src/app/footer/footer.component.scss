@@ -9,6 +9,9 @@
     color: white;
 }
 
+li {
+    padding-top: 0.5rem;
+}
 
 @media only screen and (max-width: 600px) {
     .footer {
@@ -22,5 +25,4 @@
         background-color: #1976D2;
         color: white;
     }
-    
 }

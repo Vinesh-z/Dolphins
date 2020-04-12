@@ -15,10 +15,12 @@
 .heading {
     text-align: center;
 }
+
 .admission {
     width: 75%;
     float: right;
 }
+
 .bar {
     float: right;
     right: 0;
@@ -35,7 +37,7 @@
     margin-bottom: 2rem;
     margin-left: 5rem;
     margin-right: 5rem;
-    width: 5.5rem;
+    width: 9rem;
     height: 2rem;
     border-radius: 1.5rem;
     text-align: center;
@@ -95,6 +97,7 @@ p {
 
 .tree {
     left: 0;
+    width: 25%;
     bottom: 0;
     height: 16rem;
 }
@@ -109,7 +112,9 @@ p {
     height: 2rem;
 }
 
-.job,.adm {
+.job,
+.adm {
+    height: 50vh;
     width: 100%
 }
 
@@ -119,12 +124,11 @@ p {
     height: 10rem;
 }
 
-.visit{
+.visit {
     margin: auto;
-        margin-top: 1rem;
-        align-items: center;
+    margin-top: 1rem;
+    align-items: center;
 }
-
 
 @media only screen and (max-width: 600px) {
     .gen-button {
@@ -146,11 +150,44 @@ p {
     .bar {
         height: 0;
     }
-    .tree{
+    .tree {
         height: 0;
     }
-    .admission,.adm {
+    .admission,
+    .adm {
         width: 100%;
     }
 }
 
+
+/***footer***/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1976D2;
+    color: white;
+}
+
+li {
+    padding-top: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        text-align: center;
+        position: relative;
+        top: 100%;
+        margin-top: 5rem;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #1976D2;
+        color: white;
+    }
+    .gen-button {
+        width: 6rem;
+    }
+}

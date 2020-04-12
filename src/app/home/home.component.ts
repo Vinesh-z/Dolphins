@@ -10,9 +10,9 @@ export class HomeComponent implements OnInit {
 
   constructor(private announcementService: AnnouncementService) { }
 
-  announcements:any;
+  announcements: any;
   ngOnInit() {
-    this.announcementService.getAnnouncements().subscribe(data=>{
+    this.announcementService.getAnnouncements().subscribe(data => {
       console.log(data.announcements);
       this.announcements = data.announcements;
     });

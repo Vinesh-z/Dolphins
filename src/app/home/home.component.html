@@ -1,7 +1,7 @@
 <div class="gen-container">
     <div class="cover-img">
         <a>
-            <img class="d-block w-100 cover-image" src="../../assets/dolphins.jpg" alt="First slide">
+            <img class="d-block w-100 cover-image" src="../../assets/home.jpg" alt="First slide">
         </a>
     </div>
     <div>
@@ -10,28 +10,26 @@
             <button type="button" class="btn btn-success gen-button" routerLink="gallery">Gallery</button>
             <button type="button" class="btn btn-warning gen-button" routerLink="enquiry">Enquiry</button>
         </div>
+    </div>
 
+    <div class="col-container">
         <div class="row">
-
-            <div class="col-sm-4 gen-col">
-                <div class="tree-pic">
+            <div class="col-sm about-col">
+                <!-- <div class="tree-pic">
                     <img class="d-block cover-image tree" src="../../assets/tree.png">
-                </div>
-                <div class="heading">
-                    <h5>About</h5>
-                </div>
-                <div>
-                    <p class="about"> We were established in 2017 with an aim of providing affordable education which focuses mainly on strengthening the fundamental roots of learning. Our approach will help the child in learning better, as the child advances to higher
-                        classes. We have over 250+ happy parents so far, whose children have been admitted in elite schools.
-                    </p>
-                    <div class="bar" style="background-color: #e53935;"></div>
-                </div>
+                </div> -->
 
-            </div>
-            <div class="col-sm-4 gen-col">
                 <div>
-                    <h5>Why us?</h5>
-                    <div class="why-us" style="position: relative;">
+                    <p class="main-heading">About</p>
+                </div>
+                <p class="about"> We were established in 2017 with an aim of providing affordable education which focuses mainly on strengthening the fundamental roots of learning. Our approach will help the child in learning better, as the child advances to higher classes.
+                    We have over 250+ happy parents so far, whose children have been admitted in elite schools.
+                </p>
+            </div>
+            <div class="col-sm why-col">
+                <div>
+                    <p class="main-heading">Why us?</p>
+                    <div class="why-us">
                         <img class="d-block cover-image why-pic" src="../../assets/abc.png">
                         <p class="why">
                             We focus on development of strong basics</p>
@@ -58,11 +56,10 @@
                     </div><br>
 
                 </div>
-                <div class="bar" style="background-color: #fdd835;"></div>
             </div>
-            <div class="col-sm-4 gen-col">
+            <div class="col-sm announcement-col">
                 <div>
-                    <h5><img class="d-block cover-image announcement" src="../../assets/announcement.png">Announcement</h5>
+                    <p class="main-heading"><img class="d-block cover-image announcement" src="../../assets/announcement.png">Announcement</p>
                 </div>
                 <div class="announcements">
                     <p *ngFor="let ann of announcements; let i = index">
@@ -73,5 +70,27 @@
         </div>
     </div>
 
-    <app-footer></app-footer>
-</div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="col-md-12 offset-md-1">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <ul class="list-unstyled quick-links">
+                        <li>facebook-@wehappydolphins</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 text">
+                    <ul class="list-unstyled quick-links">
+                        <li>Contact-7349164736</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 text">
+                    <ul class="list-unstyled quick-links">
+                        <li>Mail-wehappydolphins@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { EnquiryComponent } from './enquiry/enquiry.component';
-import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -14,8 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     HomeComponent,
     GalleryComponent,
-    EnquiryComponent,
-    FooterComponent
+    EnquiryComponent
   ],
   imports: [
     BrowserModule,
