@@ -1,93 +1,95 @@
-<div class="gen-container">
-    <div class="cover-img">
-        <a>
-            <img class="d-block w-100 cover-image" src="../../assets/home.jpg" alt="First slide">
-        </a>
-    </div>
-    <div>
-        <div class="tabs">
-            <button type="button" class="btn btn-danger gen-button">Home</button>
-            <button type="button" class="btn btn-success gen-button" routerLink="gallery">Gallery</button>
-            <button type="button" class="btn btn-warning gen-button" routerLink="enquiry">Enquiry</button>
+<div class="main-container">
+    <div class="gen-container">
+        <div class="cover-img">
+            <a>
+                <img class="d-block w-100 cover-image" src="../../assets/home.jpg" alt="First slide">
+            </a>
         </div>
-    </div>
+        <div>
+            <div class="tabs">
+                <button type="button" class="btn btn-danger gen-button">Home</button>
+                <button type="button" class="btn btn-success gen-button" routerLink="gallery">Gallery</button>
+                <button type="button" class="btn btn-warning gen-button" routerLink="enquiry">Enquiry</button>
+            </div>
+        </div>
 
-    <div class="col-container">
-        <div class="row">
-            <div class="col-sm about-col">
-                <!-- <div class="tree-pic">
+        <div class="col-container">
+            <div class="row">
+                <div class="col-sm about-col">
+                    <!-- <div class="tree-pic">
                     <img class="d-block cover-image tree" src="../../assets/tree.png">
                 </div> -->
 
-                <div>
-                    <p class="main-heading">About</p>
-                </div>
-                <p class="about"> We were established in 2017 with an aim of providing affordable education which focuses mainly on strengthening the fundamental roots of learning. Our approach will help the child in learning better, as the child advances to higher classes.
-                    We have over 250+ happy parents so far, whose children have been admitted in elite schools.
-                </p>
-            </div>
-            <div class="col-sm why-col">
-                <div>
-                    <p class="main-heading">Why us?</p>
-                    <div class="why-us">
-                        <img class="d-block cover-image why-pic" src="../../assets/abc.png">
-                        <p class="why">
-                            We focus on development of strong basics</p>
-                    </div><br>
-                    <div class="why-us" style="position: relative;">
-                        <img class="d-block cover-image why-pic" src="../../assets/smart.png">
-                        <p class="why">
-                            Smart classes for interactive learning</p>
-                    </div><br>
-                    <div class="why-us" style="position: relative;">
-                        <img class="d-block cover-image why-pic" src="../../assets/teacher.png">
-                        <p class="why">
-                            Well experienced teachers</p>
-                    </div><br>
-                    <div class="why-us" style="position: relative;">
-                        <img class="d-block cover-image why-pic" src="../../assets/cctv.png">
-                        <p class="why">
-                            Safety ensured with premises under cctv surveillance</p>
-                    </div><br>
-                    <div class="why-us" style="position: relative;">
-                        <img class="d-block cover-image rating-pic" src="../../assets/4.5.png">
-                        <p class="rating">
-                            4.5 stars average rating by 250+ parents</p>
-                    </div><br>
-
-                </div>
-            </div>
-            <div class="col-sm announcement-col">
-                <div>
-                    <p class="main-heading"><img class="d-block cover-image announcement" src="../../assets/announcement.png">Announcement</p>
-                </div>
-                <div class="announcements">
-                    <p *ngFor="let ann of announcements; let i = index">
-                        {{i+1}}. {{ann}}
+                    <div>
+                        <p class="main-heading">About</p>
+                    </div>
+                    <p class="about"> We were established in 2017 with an aim of providing affordable education which focuses mainly on strengthening the fundamental roots of learning. Our approach will help the child in learning better, as the child advances to higher
+                        classes. We have over 250+ happy parents so far, whose children have been admitted in elite schools.
                     </p>
+                </div>
+                <div class="col-sm why-col">
+                    <div>
+                        <p class="main-heading">Why us?</p>
+                        <div class="why-us">
+                            <img class="d-block cover-image why-pic" src="../../assets/abc.png">
+                            <p class="why">
+                                We focus on development of strong basics</p>
+                        </div><br>
+                        <div class="why-us" style="position: relative;">
+                            <img class="d-block cover-image why-pic" src="../../assets/smart.png">
+                            <p class="why">
+                                Smart classes for interactive learning</p>
+                        </div><br>
+                        <div class="why-us" style="position: relative;">
+                            <img class="d-block cover-image why-pic" src="../../assets/teacher.png">
+                            <p class="why">
+                                Well experienced teachers</p>
+                        </div><br>
+                        <div class="why-us" style="position: relative;">
+                            <img class="d-block cover-image why-pic" src="../../assets/cctv.png">
+                            <p class="why">
+                                Safety ensured with premises under cctv surveillance</p>
+                        </div><br>
+                        <div class="why-us" style="position: relative;">
+                            <img class="d-block cover-image rating-pic" src="../../assets/4.5.png">
+                            <p class="rating">
+                                4.5 stars average rating by 250+ parents</p>
+                        </div><br>
+
+                    </div>
+                </div>
+                <div class="col-sm announcement-col">
+                    <div>
+                        <p class="main-heading"><img class="d-block cover-image announcement" src="../../assets/announcement.png">Announcement</p>
+                    </div>
+                    <div class="announcements">
+                        <p *ngFor="let ann of announcements; let i = index">
+                            {{i+1}}. {{ann}}
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Footer -->
-    <div class="footer">
-        <div class="col-md-12 offset-md-1">
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <ul class="list-unstyled quick-links">
-                        <li>facebook-@wehappydolphins</li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 text">
-                    <ul class="list-unstyled quick-links">
-                        <li>Contact-7349164736</li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 text">
-                    <ul class="list-unstyled quick-links">
-                        <li>Mail-wehappydolphins@gmail.com</li>
-                    </ul>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="col-md-12 offset-md-1">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <ul class="list-unstyled quick-links">
+                            <li>facebook-@wehappydolphins</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 text">
+                        <ul class="list-unstyled quick-links">
+                            <li>Contact-7349164736</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 text">
+                        <ul class="list-unstyled quick-links">
+                            <li>Mail-wehappydolphins@gmail.com</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
