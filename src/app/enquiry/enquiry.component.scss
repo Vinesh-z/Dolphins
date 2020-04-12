@@ -65,6 +65,15 @@ p {
     height: 100px;
 }
 
+.adm-col {
+    border-right: 5px solid #dc3545;
+}
+
+
+.job-col {
+    border-right: 5px solid #ffc107;
+}
+
 .why-pic {
     float: left;
     margin-left: 1.5rem;
@@ -113,15 +122,14 @@ p {
 }
 
 .job,
-.adm {
-    height: 50vh;
+.adm,.map {
+    height: 50rem;
     width: 100%
 }
 
 .map {
     margin: auto;
-    width: 100%;
-    height: 10rem;
+    width: 90%;
 }
 
 .visit {
@@ -163,6 +171,7 @@ p {
 /***footer***/
 
 .footer {
+    margin-top: 1rem;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -190,4 +199,9 @@ li {
     .gen-button {
         width: 6rem;
     }
+    .job,
+    .adm {
+    height: 50rem;
+    width: 100%
+}
 }
