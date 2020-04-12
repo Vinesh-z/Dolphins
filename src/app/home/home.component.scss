@@ -107,38 +107,6 @@ p {
     height: 2rem;
 }
 
-@media only screen and (max-width: 600px) {
-    .gen-button {
-        margin: 0.5rem;
-    }
-    .gen-col {
-        margin-top: 1rem;
-        display: grid;
-    }
-    .rating-pic {
-        float: left;
-        position: absolute;
-        height: 0.7rem;
-        margin-top: 0.5rem;
-    }
-    .rating {
-        margin-left: 5rem;
-    }
-    .bar {
-        height: 0;
-    }
-    .rating {
-        margin-left: 7rem;
-    }
-    .tree {
-        left: 0;
-        bottom: 0;
-        margin-left: 1rem;
-        margin-top: -1.8rem;
-        height: 11rem;
-    }
-    
-}
 .announcements {
     width: 90%;
     margin: 0;
@@ -172,3 +140,42 @@ p {
   ::-webkit-scrollbar-thumb:hover {
     background: #b30000; 
   }
+
+@media only screen and (max-width: 600px) {
+    .gen-button {
+        margin: 0.5rem;
+    }
+    .gen-col {
+        margin-top: 1rem;
+        display: grid;
+    }
+    .rating-pic {
+        float: left;
+        position: absolute;
+        height: 0.7rem;
+        margin-top: 0.5rem;
+    }
+    .rating {
+        margin-left: 5rem;
+    }
+    .bar {
+        height: 0;
+    }
+    .rating {
+        margin-left: 7rem;
+    }
+    .tree {
+        left: 0;
+        bottom: 0;
+        margin-left: 1rem;
+        margin-top: -1.8rem;
+        height: 11rem;
+    }
+
+    .announcements {
+        margin: auto;
+        margin-top: 1rem;
+        align-items: center;
+    }
+    
+}
