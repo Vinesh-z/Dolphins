@@ -2,95 +2,287 @@
     <div class="gen-container">
         <div class="cover-img">
             <a>
-                <img class="d-block w-100 cover-image" src="../../assets/home.jpg" alt="First slide">
+                <img class="d-block w-100 cover-image" src="../../assets/website_cover-01.jpg" alt="First slide">
             </a>
         </div>
-        <div>
-            <div class="tabs">
-                <button type="button" class="btn btn-danger gen-button">Home</button>
-                <button type="button" class="btn btn-success gen-button" routerLink="gallery">Gallery</button>
-                <button type="button" class="btn btn-warning gen-button" routerLink="enquiry">Enquiry</button>
+
+        <h2 class="widget-title">
+            Why Love Us
+        </h2>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 col-sm-6 col-6">
+            <div class="container-fluid">
+            <div class="widget-circle" style="background-color:#f25141">
+                <img class="avatar" src="../../assets/valentines16.png" alt="pooja_1">
+            </div>
+            <div class="widget-circle-title" style="color:#f25141">
+                Great Teachers
             </div>
         </div>
 
-        <div class="col-container">
-            <div class="row">
-                <div class="col-sm about-col">
-                    <!-- <div class="tree-pic">
-                    <img class="d-block cover-image tree" src="../../assets/tree.png">
-                </div> -->
+        </div>
 
-                    <div>
-                        <p class="main-heading">About</p>
-                    </div>
-                    <p class="about"> We were established in 2017 with an aim of providing affordable education which focuses mainly on strengthening the fundamental roots of learning. Our approach will help the child in learning better, as the child advances to higher
-                        classes. We have over 250+ happy parents so far, whose children have been admitted in elite schools.
-                    </p>
-                </div>
-                <div class="col-sm why-col">
-                    <div>
-                        <p class="main-heading">Why us?</p>
-                        <div class="why-us">
-                            <img class="d-block cover-image why-pic" src="../../assets/abc.png">
-                            <p class="why">
-                                We focus on development of strong basics</p>
-                        </div><br>
-                        <div class="why-us" style="position: relative;">
-                            <img class="d-block cover-image why-pic" src="../../assets/smart.png">
-                            <p class="why">
-                                Smart classes for interactive learning</p>
-                        </div><br>
-                        <div class="why-us" style="position: relative;">
-                            <img class="d-block cover-image why-pic" src="../../assets/teacher.png">
-                            <p class="why">
-                                Well experienced teachers</p>
-                        </div><br>
-                        <div class="why-us" style="position: relative;">
-                            <img class="d-block cover-image why-pic" src="../../assets/cctv.png">
-                            <p class="why">
-                                Safety ensured with premises under cctv surveillance</p>
-                        </div><br>
-                        <div class="why-us" style="position: relative;">
-                            <img class="d-block cover-image rating-pic" src="../../assets/4.5.png">
-                            <p class="rating">
-                                4.5 stars average rating by 250+ parents</p>
-                        </div><br>
+        <div class="col-md-2 col-sm-6 col-6">
+            <div class="widget-circle" style="background-color: #ffd823;">
+                <img class="avatar" src="../../assets/baby152.png" alt="pooja_1">
+            </div>
+            <div class="widget-circle-title" style="color:#ffd823">
+                Focus on Fundamentals
+            </div>
+        </div>
 
-                    </div>
+        <div class="col-md-2 col-sm-6 col-6">
+            <div class="widget-circle">
+                <img class="withImage" src="../../assets/price.png" alt="pooja_1">
+            </div>
+            <div class="widget-circle-title" style="color:#8f28e3">
+                Affordable Pricing
+            </div>
+
+        </div>
+
+        <div class="col-md-2 col-sm-6 col-6">
+            <div class="widget-circle">
+                <img class="withImage" src="../../assets/smart class.png" alt="pooja_1">
+            </div>
+            <div class="widget-circle-title" style="color:#93c524">
+                Smart Classes
+            </div>
+        </div>
+
+        <div class="col-md-2 col-sm-6 col-6">
+            <div class="widget-circle">
+                <img class="withImage" src="../../assets/cctv.png" alt="pooja_1">
+            </div>
+            <div class="widget-circle-title" style="color:#c524c5">
+                CCTV Surveillance
+            </div>
+
+        </div>
+
+        <div class="col-md-2 col-sm-6 col-6">
+            <div class="widget-circle">
+                <img class="withImage" src="../../assets/4.5 star.png" alt="pooja_1">
+            </div>
+            <div class="widget-circle-title" style="color:#39c2da">
+                4.5/5 Parents Rating
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="action-element mt-5">
+        <span class="action-content-box">
+            <span class="action-title">
+                How to Enroll </span>
+            <span>
+                Your Child to a Class? </span>
+
+        </span>
+        <span class="action-button">
+            <a (click)="showAdmission()" title="Learn More" class="ztl-button">
+                Learn More </a>
+        </span>
+    </div>
+    <div class="popular-courses">
+        <h2 class="widget-title">
+            Our Popular Courses
+        </h2>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-4 col-sm-6">
+            <div class="item item-course-1" style="background-color:#f25141;">
+                <div class="item-circle-top" style="background-color:#ff614f;">
+                    <img src="../../assets/babyclothing2.png" alt="Course" data-no-retina="">
                 </div>
-                <div class="col-sm announcement-col">
-                    <div>
-                        <p class="main-heading"><img class="d-block cover-image announcement" src="../../assets/announcement.png">Announcement</p>
-                    </div>
-                    <div class="announcements">
-                        <p *ngFor="let ann of announcements; let i = index">
-                            {{i+1}}. {{ann}}
-                        </p>
-                    </div>
+                <div class="item-course-title">Baby Dolphin</div>
+                <div class="item-course-sub-title">Nursery</div>
+                <div class="item-course-description">Da natum timeam ius. Sed mazim essent sim recusabo eim, eum et
+                    senserit reformi. Eos legere aperiri facilisi in.</div>
+                <div class="item-footer-content">
+                    <img class="item-footer-phantom" src="../../assets/babyclothing2.png" alt="Course"
+                        data-no-retina="">
+
                 </div>
             </div>
         </div>
 
-        <!-- Footer -->
-        <div class="footer">
-            <div class="col-md-12 offset-md-1">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-md-4">
-                        <ul class="list-unstyled quick-links">
-                            <li>facebook-@wehappydolphins</li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-4 text">
-                        <ul class="list-unstyled quick-links">
-                            <li>Contact-7349164736</li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-4 text">
-                        <ul class="list-unstyled quick-links">
-                            <li>Mail-wehappydolphins@gmail.com</li>
-                        </ul>
-                    </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="item item-course-1" style="background-color:#93c524;">
+                <div class="item-circle-top" style="background-color:#a4d638;">
+                    <img src="../../assets/toy56.png" alt="Course" data-no-retina="">
+                </div>
+                <div class="item-course-title">Mini Dolphin</div>
+                <div class="item-course-sub-title">LKG</div>
+                <div class="item-course-description">Da natum timeam ius. Sed mazim essent sim recusabo eim, eum et
+                    senserit reformi. Eos legere aperiri facilisi in.</div>
+                <div class="item-footer-content">
+                    <img class="item-footer-phantom" src="../../assets/toy56.png" alt="Course" data-no-retina="">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="item item-course-1" style="background-color:#28a8e3;">
+                <div class="item-circle-top" style="background-color:#42b7f3;">
+                    <img src="../../assets/teddybear1.png" alt="Course" data-no-retina="">
+                </div>
+                <div class="item-course-title">Super Dolphin</div>
+                <div class="item-course-sub-title">UKG</div>
+                <div class="item-course-description">Da natum timeam ius. Sed mazim essent sim recusabo eim, eum et
+                    senserit reformi. Eos legere aperiri facilisi in.</div>
+                <div class="item-footer-content">
+                    <img class="item-footer-phantom" src="../../assets/teddybear1.png" alt="Course" data-no-retina="">
+
                 </div>
             </div>
         </div>
     </div>
+
+
+</div>
+<div class="container-fluid">
+    <div class="col-sm announcement-col">
+        <div>
+            <h2 class="widget-title">
+                Announcements
+            </h2>
+        </div>
+        <div class="announcements">
+            <p *ngFor="let ann of announcements; let i = index">
+                {{ann}}
+            </p>
+        </div>
+    </div>
+    <div>
+        <h2 class="widget-title">
+            Testimonials
+        </h2>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../../assets/testimonials_bg1.png" class="d-block w-100 bg-testimonial-img" alt="...">
+                <div class="carousel-caption d-sm-block">
+
+                    <p class="testimonial-content">One of the best decisions we ever made as parents was sending
+                        our daughter, Roberta to Kiddie. Your wonderful teachers, your happy environment and
+                        fabulous phonics program are the core ingredients, which make it such a top
+                        kindergarten.</p>
+                    <div class="delimiter"></div>
+                    <div class="author">
+                        <strong> Kate Clegg </strong> (mom of Olivia), 15 feb 2015
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="../../assets/testimonials_bg1.png" class="d-block w-100 bg-testimonial-img" alt="...">
+                <div class="carousel-caption d-sm-block">
+                    <p class="testimonial-content">My daughter comes home with beautiful artwork and new songs
+                        after every class. She always has a good time. I would recommend Kiddie to anyone with
+                        young children. I think it’s the best preschool in the area.</p>
+                    <div class="delimiter"></div>
+                    <div class="author">
+                        <strong> Emily Noble </strong> (mom of Roberta), 2 feb 2015
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="../../assets/testimonials_bg1.png" class="d-block w-100 bg-testimonial-img" alt="...">
+                <div class="carousel-caption d-sm-block">
+                    <p class="testimonial-content">We’re so thrilled to have found Kiddie for our daughter. Not
+                        only is it an incredibly supportive environment for working parents, with flexible
+                        daycare options, but the teachers are also so caring and patient with the children. We
+                        are happy with Kiddie.</p>
+                    <div class="delimiter"></div>
+                    <div class="author">
+                        <strong> Karin and Albert Bennett </strong> (parents of Maya), 1 feb 2015
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <div>
+        <h2 class="widget-title">
+            Gallery
+        </h2>
+    </div>
+    <div class="photos">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-6" *ngFor="let pic of pics; let i = index">
+                <img (click)="imageClick(pic)" class="images pic-center" src={{pic}} alt="pic{{i}}">
+            </div>
+        </div>
+    </div>
+    <div class="w-100 view-button">
+        <button type="button" *ngIf="!showAll" class="btn btn-primary mt-3 mb-5" (click)="toggleImages()"
+            aria-label="Left Align">
+            View More
+        </button>
+        <button type="button" *ngIf="showAll" class="btn btn-primary mt-3 mb-5" (click)="toggleImages()"
+            aria-label="Left Align">
+            View Less
+        </button>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3 text">
+                <ul class="list-unstyled quick-links">
+                    <li>Visit Us </li>
+                    <li><a href="https://www.google.com/maps/place/Happy+Dolphins+School/@12.9281822,77.5944325,17z/data=!4m13!1m7!3m6!1s0x3bae15aacf0fe635:0x45413a515d2a7b1f!2sHappy+Dolphins+School!3b1!8m2!3d12.9281822!4d77.5966212!3m4!1s0x3bae15aacf0fe635:0x45413a515d2a7b1f!8m2!3d12.9281822!4d77.5966212"
+                            target="_blank">#703, 30th A cross, Jayanagar 4th T block, Bangalore 560041</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 text">
+                <ul class="list-unstyled quick-links">
+                    <li>Facebook</li>
+                    <li><a href="https://www.facebook.com/wehappydolphins" target="_blank">wehappydolphins</a></li>
+                </ul>
+            </div>
+
+            <div class="col-xs-12 col-sm-3 col-md-3 text">
+                <ul class="list-unstyled quick-links">
+                    <li>Mail
+                    </li>
+                    <li><a href="mailto:wehappydolphins@gmail.com" target="_blank">wehappydolphins@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 text">
+                <ul class="list-unstyled quick-links">
+                    <li>Contact</li>
+                    <li>+91 734-916-4736</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

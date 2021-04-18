@@ -10,9 +10,8 @@ export class AnnouncementService {
 
   constructor(private http: HttpClient) { }
 
-  getAnnouncements(): Observable<any> {
-    return this.http.get<any>('../../assets/announcement.json').pipe(map(announcements => {
-      return announcements;
-    }))
+
+  getAnnouncementsFromGit(): Observable<any> {
+    return this.http.get<any>('https://raw.githubusercontent.com/Vinesh-z/Dolphins-Announcements/master/announcement.json');
   }
 }

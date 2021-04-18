@@ -1,154 +1,248 @@
-/* buttons */
-
-.tabs {
+.widget-title {
+    margin-top: 2rem;
     text-align: center;
+    font-family: 'Salsa', cursive;
+    font-size: 42px;
+    color: #704825;
+}
+.widget-title::after {
+    background-color: #ffd823;
+    content: '';
+    display: block;
+    margin: 1rem auto 0 auto;
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.widget-circle {
+    position: relative;
+    border-radius: 50%;
+    width: 105px;
+    height: 105px;
+    margin: 1rem auto;
+    line-height: 110px;
+    text-align: center;
+}
+.avatar {
+    height: 60px;
+    max-height: 50%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.withImage {
+    height: 100px;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.widget-circle-title {
     width: 100%;
-}
-
-.gen-button {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    width: 9rem;
-    height: 2rem;
-    border-radius: 1.5rem;
     text-align: center;
-    line-height: 2px;
-    color: #fff;
+    margin: 2rem 0;
+    font-size: 28px;
+    line-height: 1.2;
+    word-spacing: 999px;
+    font-family: 'Salsa', cursive;
 }
 
+.widget-circle-description {
+    padding-bottom: 4rem;
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+    font-family: 'Open Sans',sans-serif;
+}
 
-/* about-column */
+.action-content-box {
+    line-height: 1.2;
+    font-size: 42px;
+    float: left;
+    max-width: 75%;
+    font-weight: 300;
+}
 
-.tree {
+.action-button {
+    float: right;
+    max-width: 25%;
+}
+
+.action-title {
+    font-family: 'Salsa', cursive;
+    font-weight: normal;
+    color: #704825;
+}
+
+.ztl-button {
+    color: #704825;
+    background-color: #ffd823;
+    border-radius: 5px;
+    border: none;
+    line-height: 26px;
+    font-size: 18px !important;
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 20px;
+}
+
+.popular-courses {
+    margin-top: 14rem;
+}
+
+.ztl-widget-description {
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 4rem;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 2rem;
+    color: #777;
+    font-family: 'Open Sans',sans-serif;
+}
+.item {
+    margin: 3rem auto 2rem auto;
+}
+.item-circle-top {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
     left: 0;
-    bottom: 0;
-    margin-top: -4.5rem;
-    height: 16rem;
-    width: 45%;
+    right: 0;
+    top: -60px;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    line-height: 120px;
+}
+.item-circle-top img {
+    max-height: 50%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.item-course-1 {
+    width: 224px;
+    min-height: 300px;
+    border-radius: 20px;
+    position: relative;
+}
+.item-course-title {
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Salsa', cursive;
+    padding-top: 4rem;
+}
+.item-course-sub-title {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Salsa', cursive;
+    color: #fff;
+    padding: 0 0 20px 0;
+}
+.item-course-description {
+    width: 100%;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 16px;
+}
+.item-footer-phantom {
+    opacity: 0.2;
+    position: absolute;
+    bottom: 0px;
+    left: -2rem;
+    right: auto;
+    width: 40%;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+@media only screen and (max-width: 767px) {
+    .ztl-courses-wrapper .item {
+    margin: 8rem auto 2rem auto;
+    }
 }
 
-.about {
-    font-size: 1.25rem;
-    z-index: 1;
-    text-align: left;
-    align-items: center;
-    margin-left: 6rem;
-    line-height: 2rem;
+.carousel-item {
+    background-color: #f25141;
+    height: 400px;
 }
-
-.main-heading {
-    font-size: 2.5rem;
+.carousel-caption {
+    margin: 0;
+    color: white;
     text-align: center;
 }
-
-.about-col {
-    border-right: 5px solid red;
+.delimiter {
+    height: 1px;
+    width: 60px;
+    background-color: #fff;
+    margin: 3rem auto;
+}
+.testimonial-content {
+    font-style: italic;
+    padding-top:1rem;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
 }
 
-
-/* Why us */
-
-.why-col {
-    border-right: 5px solid #ffeb3b;
+.bg-testimonial-img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
-.rating-pic {
-    float: left;
-    position: absolute;
-    height: 1rem;
-    margin-top: 0.2rem;
+.author {
+    font-size: 16px;
+    margin-bottom: 4rem;
+    font-style: italic;
 }
 
-.rating {
-    font-size: 1.25rem;
-    margin-left: 7rem;
-    float: right;
-    position: absolute;
-}
-
-.why-pic {
-    float: left;
-    margin-left: 1.5rem;
-    position: absolute;
-    height: 1.8rem;
-}
-
-.why {
-    font-size: 1.25rem;
-    margin-left: 7rem;
-    float: right;
-    position: absolute;
-}
-
-.why-us {
+.images {
     margin-top: 2rem;
+    width: 12rem;
+    height: 11rem;
 }
 
+.view-button {
+    text-align: right;
+    margin-bottom: 5rem;
+}
 
-/* announcements */
+.gen-col {
+    position: relative;
+    display: inline-block;
+}
+
 
 .announcement {
     margin-left: 3rem;
     position: absolute;
-    height: 3.5rem;
 }
 
 .announcements {
     width: 98%;
     margin: 0;
-    overflow-y: scroll;
     font-weight: bold;
     margin-top: 1rem;
-    height: 20vh;
     color: #eee;
     padding: 10px;
     border: 10px solid #B78240;
     background-color: #497959;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-
-/* Track */
-
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-}
-
-
-/* Handle */
-
-::-webkit-scrollbar-thumb {
-    background: #505160;
-    border-radius: 10px;
-}
-
-
-/* Handle on hover */
-
-::-webkit-scrollbar-thumb:hover {
-    background: #b30000;
-}
-
-.main-container {
-    overflow-y: scroll;
-}
-
-
 /* Footer */
 
 .footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #1976D2;
+    background-color: #704825;
     color: white;
+    text-align: center;
+    // padding-right: 12rem;
 }
 
 li {
@@ -159,67 +253,85 @@ li {
     .footer {
         text-align: center;
         position: relative;
+        z-index: 100;
         top: 100%;
         margin-top: 5rem;
         left: 0;
         bottom: 0;
         width: 100%;
-        background-color: #1976D2;
+        background-color: #704825;
         color: white;
+        padding-right: 0rem;
     }
+
+    .widget-circle {
+        position: relative;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin: 1rem auto;
+        line-height: 80px;
+        text-align: center;
+    }
+    .avatar {
+        height: 50px;
+        max-height: 50%;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+
+    .withImage {
+        height: 75px;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+
+    
+.widget-circle-title {
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 20px;
+    line-height: 1.2;
+    word-spacing: 999px;
+    font-family: 'Salsa', cursive;
+}
 }
 
 @media only screen and (max-width: 600px) {
-    .why-col {
-        border-right: 0px;
-    }
-    .about-col {
-        border-right: 0px;
-    }
-    .gen-button {
-        width: 6rem;
-        margin: 0.5rem;
-    }
-    .main-heading {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    .about {
-        margin: 0;
-        font-size: small;
-    }
-    .rating-pic {
-        float: left;
-        position: absolute;
-        height: 0.7rem;
-        margin-top: 0.5rem;
-    }
-    .why-col {
-        margin-top: 1.5rem;
-    }
-    .why {
-        font-size: small;
-        margin-left: 7rem;
-        float: right;
-        position: absolute;
-    }
-    .rating {
-        font-size: small;
-        margin-left: 7rem;
-        float: right;
-        position: absolute;
-    }
     .announcement {
         margin-left: 1rem;
         position: absolute;
-        height: 2rem;
+       
     }
     .announcement-col {
-        margin-top: 2rem;
+        margin-top: 2rem; 
     }
     .announcements {
         margin: auto;
         margin-top: 1rem;
         align-items: center;
     }
+    .view-button {
+        text-align: center;
+    }
+    .carousel-item {
+        height: 600px;
+    }
 }
+
+.pic-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .row {
+      margin-right: 0px;
+      margin-left: 0px;
+  }
+
+  .text {
+      padding-right: 0px;
+      padding-left: 0px !important;
+  }
