@@ -6,6 +6,23 @@
             </a>
         </div>
 
+        <div class="container ">
+            <div class="row">
+                <div class="col nav-button-col">
+                    <button type="button" class="btn btn-primary mt-3 mb-5 nav-button" (click)="routeToNotice()"
+                        aria-label="Left Align">
+                        Notice
+                    </button>
+                </div>
+                <div class="col nav-button-col">
+                    <button type="button" class="btn btn-warning mt-3 mb-5 nav-button" (click)="routeToGallery()"
+                        aria-label="Left Align">
+                        Gallery
+                    </button>
+                </div>
+            </div>
+        </div>
+
         <h2 class="widget-title">
             Why Love Us
         </h2>
@@ -16,13 +33,13 @@
     <div class="row">
         <div class="col-md-2 col-sm-6 col-6">
             <div class="container-fluid">
-            <div class="widget-circle" style="background-color:#f25141">
-                <img class="avatar" src="../../assets/valentines16.png" alt="pooja_1">
+                <div class="widget-circle" style="background-color:#f25141">
+                    <img class="avatar" src="../../assets/valentines16.png" alt="pooja_1">
+                </div>
+                <div class="widget-circle-title" style="color:#f25141">
+                    Great Teachers
+                </div>
             </div>
-            <div class="widget-circle-title" style="color:#f25141">
-                Great Teachers
-            </div>
-        </div>
 
         </div>
 
@@ -80,14 +97,12 @@
     <div class="action-element mt-5">
         <span class="action-content-box">
             <span class="action-title">
-                How to Enroll </span>
-            <span>
-                Your Child to a Class? </span>
+                Let's get in touch? </span>
 
         </span>
         <span class="action-button">
-            <a (click)="showAdmission()" title="Learn More" class="ztl-button">
-                Learn More </a>
+            <a (click)="moveToFooter()" title="Learn More" class="ztl-button">
+                Contact us </a>
         </span>
     </div>
     <div class="popular-courses">
@@ -104,8 +119,7 @@
                 </div>
                 <div class="item-course-title">Baby Dolphin</div>
                 <div class="item-course-sub-title">Nursery</div>
-                <div class="item-course-description">Da natum timeam ius. Sed mazim essent sim recusabo eim, eum et
-                    senserit reformi. Eos legere aperiri facilisi in.</div>
+                <div class="item-course-description">Age between 2 years 9 months - 3.5 years</div>
                 <div class="item-footer-content">
                     <img class="item-footer-phantom" src="../../assets/babyclothing2.png" alt="Course"
                         data-no-retina="">
@@ -121,8 +135,7 @@
                 </div>
                 <div class="item-course-title">Mini Dolphin</div>
                 <div class="item-course-sub-title">LKG</div>
-                <div class="item-course-description">Da natum timeam ius. Sed mazim essent sim recusabo eim, eum et
-                    senserit reformi. Eos legere aperiri facilisi in.</div>
+                <div class="item-course-description">Age between 3.5 years - 4.5 years</div>
                 <div class="item-footer-content">
                     <img class="item-footer-phantom" src="../../assets/toy56.png" alt="Course" data-no-retina="">
 
@@ -137,8 +150,7 @@
                 </div>
                 <div class="item-course-title">Super Dolphin</div>
                 <div class="item-course-sub-title">UKG</div>
-                <div class="item-course-description">Da natum timeam ius. Sed mazim essent sim recusabo eim, eum et
-                    senserit reformi. Eos legere aperiri facilisi in.</div>
+                <div class="item-course-description">Age between 4.5 years - 5.5 years</div>
                 <div class="item-footer-content">
                     <img class="item-footer-phantom" src="../../assets/teddybear1.png" alt="Course" data-no-retina="">
 
@@ -149,7 +161,7 @@
 
 
 </div>
-<div class="container-fluid">
+<div class="container-fluid" id="announcements">
     <div class="col-sm announcement-col">
         <div>
             <h2 class="widget-title">
@@ -162,7 +174,7 @@
             </p>
         </div>
     </div>
-    <div>
+    <!-- <div>
         <h2 class="widget-title">
             Testimonials
         </h2>
@@ -224,10 +236,10 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+    </div> -->
 </div>
 
-<div class="container mb-5">
+<div class="container mb-5" id="gallery">
     <div>
         <h2 class="widget-title">
             Gallery
@@ -253,34 +265,39 @@
 </div>
 
 
-<div class="footer">
+<div class="footer" id="footer">
     <div>
         <div class="row">
             <div class="col-xs-12 col-sm-3 col-md-3 text">
                 <ul class="list-unstyled quick-links">
-                    <li>Visit Us </li>
-                    <li><a href="https://www.google.com/maps/place/Happy+Dolphins+School/@12.9281822,77.5944325,17z/data=!4m13!1m7!3m6!1s0x3bae15aacf0fe635:0x45413a515d2a7b1f!2sHappy+Dolphins+School!3b1!8m2!3d12.9281822!4d77.5966212!3m4!1s0x3bae15aacf0fe635:0x45413a515d2a7b1f!8m2!3d12.9281822!4d77.5966212"
+                    <li>
+                        <img class="footer-icon" src="../../assets/address.png" alt="address-icon">
+                    </li>
+                    <li><a class="footer-ref"
+                            href="https://www.google.com/maps/place/Happy+Dolphins+School/@12.9281822,77.5944325,17z/data=!4m13!1m7!3m6!1s0x3bae15aacf0fe635:0x45413a515d2a7b1f!2sHappy+Dolphins+School!3b1!8m2!3d12.9281822!4d77.5966212!3m4!1s0x3bae15aacf0fe635:0x45413a515d2a7b1f!8m2!3d12.9281822!4d77.5966212"
                             target="_blank">#703, 30th A cross, Jayanagar 4th T block, Bangalore 560041</a></li>
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-3 col-md-3 text">
                 <ul class="list-unstyled quick-links">
-                    <li>Facebook</li>
-                    <li><a href="https://www.facebook.com/wehappydolphins" target="_blank">wehappydolphins</a></li>
+                    <li><img class="footer-icon" src="../../assets/facebook.png" alt="address-icon"></li>
+                    <li><a class="footer-ref" href="https://www.facebook.com/wehappydolphins"
+                            target="_blank">wehappydolphins</a></li>
                 </ul>
             </div>
 
             <div class="col-xs-12 col-sm-3 col-md-3 text">
                 <ul class="list-unstyled quick-links">
-                    <li>Mail
+                    <li><img class="footer-icon" src="../../assets/mail.png" alt="address-icon">
                     </li>
-                    <li><a href="mailto:wehappydolphins@gmail.com" target="_blank">wehappydolphins@gmail.com</a></li>
+                    <li><a class="footer-ref" href="mailto:wehappydolphins@gmail.com"
+                            target="_blank">wehappydolphins@gmail.com</a></li>
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-3 col-md-3 text">
                 <ul class="list-unstyled quick-links">
-                    <li>Contact</li>
-                    <li>+91 734-916-4736</li>
+                    <li><img class="footer-icon" src="../../assets/contact.png" alt="address-icon"></li>
+                    <li>+91-7349164736</li>
                 </ul>
             </div>
         </div>

@@ -24,6 +24,14 @@
     line-height: 110px;
     text-align: center;
 }
+.nav-button-col {
+    text-align: center;
+}
+.nav-button {
+    width: 50%;
+    color: #ffffff;
+    font-weight: bold;
+}
 .avatar {
     height: 60px;
     max-height: 50%;
@@ -65,6 +73,8 @@
 
 .action-button {
     float: right;
+    font-weight: bold;
+    color: #704825;
     max-width: 25%;
 }
 
@@ -75,7 +85,8 @@
 }
 
 .ztl-button {
-    color: #704825;
+    color: #ffffff;
+    cursor: pointer;
     background-color: #ffd823;
     border-radius: 5px;
     border: none;
@@ -121,8 +132,9 @@
     vertical-align: middle;
 }
 .item-course-1 {
+    text-align: center;
     width: 224px;
-    min-height: 300px;
+    min-height: 250px;
     border-radius: 20px;
     position: relative;
 }
@@ -202,8 +214,8 @@
 
 .images {
     margin-top: 2rem;
-    width: 12rem;
-    height: 11rem;
+    width: 11rem;
+    height: 9rem;
 }
 
 .view-button {
@@ -334,4 +346,14 @@ li {
   .text {
       padding-right: 0px;
       padding-left: 0px !important;
+  }
+
+  .footer-ref {
+      color: #ffffff;
+      text-decoration: underline;
+  }
+
+  .footer-icon {
+      height: 2rem;
+      width: 2rem;
   }
