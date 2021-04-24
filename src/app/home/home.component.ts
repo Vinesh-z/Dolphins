@@ -8,7 +8,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  lessPhotos = ['../../assets/photos/pic1.JPG', '../../assets/photos/pic3.JPG', '../../assets/photos/pic4.JPG', '../../assets/photos/pic5.JPG'];
+  lessPhotos = ['../../assets/photos/pic41.JPG','../../assets/photos/pic42.JPG','../../assets/photos/pic43.JPG','../../assets/photos/pic44.JPG'];
   
   allPhotos =[
   '../../assets/photos/pic41.JPG','../../assets/photos/pic42.JPG','../../assets/photos/pic43.JPG','../../assets/photos/pic44.JPG',
