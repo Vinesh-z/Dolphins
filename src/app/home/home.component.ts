@@ -8,11 +8,11 @@ import Swal from 'sweetalert2';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  lessPhotos = ['../../assets/photos/pic41.JPG','../../assets/photos/pic42.JPG','../../assets/photos/pic43.JPG','../../assets/photos/pic44.JPG'];
+  lessPhotos = ['../../assets/photos/pic43.JPG','../../assets/photos/pic44.JPG','../../assets/photos/pic45.JPG','../../assets/photos/pic46.JPG'];
   
   allPhotos =[
-  '../../assets/photos/pic41.JPG','../../assets/photos/pic42.JPG','../../assets/photos/pic43.JPG','../../assets/photos/pic44.JPG',
-  '../../assets/photos/pic45.JPG','../../assets/photos/pic46.JPG','../../assets/photos/pic47.JPG','../../assets/photos/pic48.JPG',
+  '../../assets/photos/pic43.JPG','../../assets/photos/pic44.JPG','../../assets/photos/pic45.JPG','../../assets/photos/pic46.JPG',
+  '../../assets/photos/pic41.JPG','../../assets/photos/pic42.JPG','../../assets/photos/pic47.JPG','../../assets/photos/pic48.JPG',
   '../../assets/photos/pic49.JPG','../../assets/photos/pic50.JPG','../../assets/photos/pic51.JPG','../../assets/photos/pic52.JPG',
   '../../assets/photos/pic53.JPG','../../assets/photos/pic54.JPG','../../assets/photos/pic55.JPG','../../assets/photos/pic56.JPG',
   '../../assets/photos/pic57.JPG','../../assets/photos/pic58.JPG','../../assets/photos/pic59.JPG',];
